@@ -10,6 +10,7 @@ import java.sql.Statement;
 import java.util.Properties;
 
 public abstract class DB {
+	
 
 	private static Connection conn = null;
 	
