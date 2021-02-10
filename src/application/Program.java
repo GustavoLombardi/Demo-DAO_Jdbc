@@ -16,18 +16,25 @@ public class Program {
 		System.out.println(" ==== Test 1: seller FindById ======");
 		Seller seller = sellerdao.findById(3);
 		System.out.println(seller);
+		System.out.println(" ==== Test 2: seller FindByDepartment ======");
+		System.out.println(seller);
 		Department department = new Department(4, null);
-
 		List<Seller> list = sellerdao.findByDepartment(department);
 
 		for (Seller obj : list) {
 
 			System.out.println(obj);
+		}
+			
+			System.out.println(" ==== Test 3: seller FindByAll ======");
+			System.out.println(seller);
+			list = sellerdao.findAll();
+			for (Seller obj : list) {
+
+				System.out.println(obj);
 
 		}
 
 		}
 
 	}
-
-
